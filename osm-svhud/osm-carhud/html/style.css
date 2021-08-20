@@ -1,0 +1,243 @@
+html {
+    overflow: hidden;
+    color:white;
+    font-family: 'Quicksand', serif;
+    letter-spacing: 0.7px;
+    font-size:16px;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    text-shadow: 1px 1px 1px rgba(1,1,1,1);
+	user-select: none;
+}
+
+.vehicle {
+    display:block;
+    width:100%;
+	position: absolute;
+	bottom: -3vh;
+	left: 0;
+}
+
+.time {
+    display:inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 420px;
+}
+
+.street {
+    display:inline-block;
+    position: absolute;
+}
+
+
+.locations {
+	position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    left: 10px;
+}
+
+.left {
+    float:left;
+}
+
+.smalltext {
+    font-size:10px;
+    margin-left:10px;
+}
+
+.currentfuel {
+    margin-left:25px;
+    margin-bottom:4%;
+}
+
+.currentspeed {
+    margin-left:25;
+    margin-bottom:4%;
+} 
+
+.cruise {
+    margin-left:25px;
+    margin-bottom:4%;
+
+} 
+
+.seatbelt {
+    margin-left:25px;
+    margin-bottom:4%;
+} 
+
+.nos {
+    margin-left:50px;
+    margin-bottom:4%;
+}
+
+.red {
+    color:red;
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    line-height: 1; 
+}
+
+.green {
+    color:green;
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    line-height: 1; 
+}
+
+.blue {
+    color:rgb(102, 143, 255);
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    line-height: 1; 
+    text-shadow: 1px 1px black;
+}
+
+.yellow {
+    color:yellow;
+    font-weight: bold; 
+    letter-spacing: 1px; 
+    line-height: 1; 
+    text-shadow: 1px 1px black;
+}
+
+
+.hudui {
+    display:none;
+    width: 100%;
+    height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.lower {
+    margin-top: 51% !important;
+}
+
+.timelower {
+    padding-bottom: 0px !important;
+    margin-bottom: 15px !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.direction {
+    color: #111111;
+    background-color: rgba(226, 226, 226, 0);
+    width: 100px;
+    height: 26px;
+    overflow: hidden;
+    position: absolute;
+    display: inline-block;
+    bottom: 360px;
+    left: 175px;
+}
+
+.seatbelt_icon {
+	width: 30px;
+    position: absolute;
+    bottom: 280px;
+    left: 360px;
+}
+
+.harness_icon {
+	width: 30px;
+    position: absolute;
+    bottom: 280px;
+    left: 360px;
+}
+
+.cruise_icon {
+	width: 30px;
+    position: absolute;
+    bottom: 240px;
+    left: 380px;
+}
+
+.direction>.image {
+    height: 100%;
+    background-position: center center;
+    background-size: 400px;
+    background-repeat: repeat;
+    width: 800%;
+    z-index: 1;
+    background-image: url('compass.png');
+}
+
+
+
+.setup {
+	display: inline-block;
+	position: relative;
+	margin-top: 20%;
+	left: 50%;
+	margin-left: -300px;
+	text-align: center;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+	padding: 50px;
+	border-radius: 25px;
+	background-color: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+	z-index: 10000000000000;
+}
+
+.setuptext{
+	display: inline-block;
+	position: absolute;
+	margin-top: 15%;
+	width: 100%;
+	font-size: 25px;
+	text-align: center;
+	visibility: hidden;
+}
+
+.loc_compass {
+    left: 20px;
+    bottom: 70px;
+}
+
+.time_compass {
+    left: 20px;
+    bottom: 100px;
+}
+
+.direction_compass {
+    left: 20px;
+    bottom: 140px;
+}
+
+/* 2560x1440 */
+@media only screen and (min-width: 2550px) and (max-width: 2560px) {
+	.seatbelt_icon {
+        left: 480px !important;
+        bottom: 330px !important;
+    }	
+    .harness_icon {
+        left: 480px !important;
+        bottom: 330px !important;
+    }   
+    .cruise_icon {
+        left: 500px !important;
+        bottom: 280px !important;
+    }   
+    .direction {
+        left: 250px !important;
+        bottom: 450px !important;
+    }   
+    .locations {
+        font-size: 18px !important;
+    }
+    .time {
+        font-size: 18px !important;
+    }
+} 

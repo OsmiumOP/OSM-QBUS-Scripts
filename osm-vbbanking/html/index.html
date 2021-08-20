@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>qb-banking by VisiBait#0712</title>
+        <link href="./css/style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div class="qb-banking-container noselect">
+			<div class="qb-banking-rightbar">
+				<div class="qb-banking-rightbar-header">
+					<img class="qb-banking-rightbar-misdibanklogo" src="img/misdibank.PNG">
+					<span class="qb-banking-rightbar-misdibanktext">OSMFX VB Banking</span>
+				</div>
+				<div class="qb-banking-rightbar-options">
+					<div class="qb-banking-rightbar-options-buttons" id="inicio">
+						<i class="fal fa-home casica"></i>
+						<span class="qb-banking-rightbar-text">Home</span>
+					</div>
+					<div class="qb-banking-rightbar-options-buttons" id="depositar">
+						<i class="fal fa-money-check-alt creditcard"></i>
+						<span class="qb-banking-rightbar-text">Deposit</span>
+					</div>
+					<div class="qb-banking-rightbar-options-buttons" id="transfer">
+						<i class="fal fa-exchange-alt creditcard"></i>
+						<span class="qb-banking-rightbar-text">Transfer</span>
+					</div>
+					<div class="qb-banking-rightbar-options-buttons" id="myaccount">
+						<i class="fal fa-user creditcard"></i>
+						<span class="qb-banking-rightbar-text">My Account</span>
+					</div>
+					<div class="qb-banking-rightbar-options-buttons" id="closebanking">
+						<i class="fal fa-sign-out-alt creditcard"></i>
+						<span class="qb-banking-rightbar-text">Log Off</span>
+					</div>
+				</div>
+			</div>
+			<div class="qb-banking-container-inicio">
+				<div class="qb-banking-inicio-bigcontainer">
+					<div class="qb-banking-inicio-bigcontainer-adcontainer">
+						<span class="adcontainer-title">OsmFX Powered Banking</span>
+						<span class="adcontainer-descripcion">discord.io/osmfx to fill your life with lots of energy!! </span>
+						<button class="adcontainer-button">Join Now</button>
+					</div>
+					<div class="qb-banking-inicio-bigcontainer-balancecontainer">
+						<div class="qb-banking-balancecontainer-creditcard">
+							<div class="qb-banking-balancecontainer-creditcard-background"></div>
+							<img class="qb-banking-creditcard-visalogo" src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png">
+							<img class="qb-banking-creditcard-chip" src="https://github.com/muhammed/vue-interactive-paycard/blob/master/src/assets/images/chip.png?raw=true">
+							<span class="qb-banking-creditcard-number">4539 &nbsp;&nbsp; 6370 &nbsp;&nbsp; 9387 &nbsp;&nbsp; 3456</span>
+							<span class="qb-banking-creditcard-cardholdertext">Card Holder</span>
+							<span class="qb-banking-creditcard-validtext">Expires:</span>
+							<span class="qb-banking-creditcard-cardholder">Loading...</span>
+							<span class="qb-banking-creditcard-valid">08/24</span>
+						</div>
+						<div class="qb-banking-balancecontainer-balancediv">
+							<span class="qb-balance-balancetext">Account Balance</span>
+							<span class="qb-balance-balance">$ 0</span>
+							<div class="qb-balance-buttonadd" id="meterpastica">
+								<i class="fal fa-plus meterpasta"></i>
+							</div>
+							<!-- <span class="qb-balance-creditstext">qb-Banking by VisiBait (qb-Scripts)</span> -->
+						</div>
+					</div>
+					<div class="qb-banking-inicio-bigcontainer-withdrawandallofthatstuff">
+						<span class="qb-withdrawandallofthatstuff-withdrawtext">Withdraw Money</span>
+						<div class="qb-withdrawandallofthatstuff-accountdiv">
+							<img class="qb-banking-accountdiv-misdibanklogo" src="img/misdibank.PNG">
+							<span class="qb-banking-accountdiv-accountnumber">****&nbsp; 2233</span>
+							<i class="fal fa-chevron-down simbolicocambiarcuenta"></i>
+						</div>
+						<div class="qb-withdrawandallofthatstuff-amounetcdiv">
+							<span class="qb-withdrawandallofthatstuff-amounttext">Enter the Amount</span>
+							<span class="qb-withdrawandallofthatstuff-dollarsymbol">$</span>
+							<input type="number" class="qb-withdrawandallofthatstuff-inputamount select" id="withdrawnumber">
+						</div>
+						<button class="qb-withdrawandallofthatstuff-withdrawbutton" id="withdraw">Withdraw</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="qb-banking-bigcontainerdepositar">
+				<div class="qb-banking-depositar-container">
+					<div class="qb-banking-depositcontainer">
+						<div class="qb-banking-depositcontainer-creditcard">
+							<div class="qb-banking-depositcontainer-creditcard-background"></div>
+							<img class="qb-banking-creditcard-visalogo" src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png">
+							<img class="qb-banking-creditcard-chip" src="https://github.com/muhammed/vue-interactive-paycard/blob/master/src/assets/images/chip.png?raw=true">
+							<span class="qb-banking-creditcard-number">4539 &nbsp;&nbsp; 6370 &nbsp;&nbsp; 9387 &nbsp;&nbsp; 3456</span>
+							<span class="qb-banking-creditcard-cardholdertext">Card Holder</span>
+							<span class="qb-banking-creditcard-validtext">Expires:</span>
+							<span class="qb-banking-creditcard-cardholder">Loading...</span>
+							<span class="qb-banking-creditcard-valid">08/24</span>
+						</div>
+						<!-- <span class="qb-banking-depositcontainer-title">Deposit money</span> -->
+						<div class="qb-banking-depositcontainer-buttoncontainer">
+							<button class="qb-banking-buttoncontainer-button">Deposit</button>
+							<button class="qb-banking-buttoncontainer-button button2" id="transfer">Transfer</button>
+						</div>
+						<div class="qb-banking-depositcontainer-depositmoneydiv">
+							<span class="qb-withdrawandallofthatstuff-amounttext">Enter the Amount</span>
+							<span class="qb-withdrawandallofthatstuff-dollarsymbol">$</span>
+							<input type="number" class="qb-withdrawandallofthatstuff-inputamount select" id="cantidaddepositar">
+						</div>
+						<button class="qb-banking-depositcontainer-completarbutton" id="depositarpasta"><i class="far fa-money-bill-wave-alt"></i>&nbsp;&nbsp;Deposit</button>
+					</div>
+				</div>
+			</div>
+			<div class="qb-banking-bigcontainertransfer">
+				<div class="qb-banking-transferir-container">
+					<div class="qb-banking-transferircontainer">
+						<div class="qb-banking-depositcontainer-creditcard">
+							<div class="qb-banking-depositcontainer-creditcard-background"></div>
+							<img class="qb-banking-creditcard-visalogo" src="https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/visa.png">
+							<img class="qb-banking-creditcard-chip" src="https://github.com/muhammed/vue-interactive-paycard/blob/master/src/assets/images/chip.png?raw=true">
+							<span class="qb-banking-creditcard-number">4539 &nbsp;&nbsp; 6370 &nbsp;&nbsp; 9387 &nbsp;&nbsp; 3456</span>
+							<span class="qb-banking-creditcard-cardholdertext">Titular</span>
+							<span class="qb-banking-creditcard-validtext">Validez:</span>
+							<span class="qb-banking-creditcard-cardholder">Loading...</span>
+							<span class="qb-banking-creditcard-valid">08/24</span>
+						</div>
+						<span class="qb-banking-depositcontainer-title">Transfer Money</span>
+						<div class="qb-banking-depositcontainer-buttoncontainer">
+							<button class="qb-banking-buttoncontainer-button">Transfer</button>
+							<button class="qb-banking-buttoncontainer-button button2" id="depositar">Deposit</button>
+						</div>
+						<div class="qb-banking-transferircontainer-transferstuff">
+							<span class="qb-banking-transferircontainer-payto">Send to</span>
+							<input type="number" class="qb-banking-tranferircontainer-iduser" id="iddestinatario" placeholder="Enter the ID of the target.">
+							<span class="qb-banking-transferircontainer-quantitytext">Amount</span>
+							<input type="number" class="qb-banking-tranferircontainer-quantity" id="cantidadtransfer" placeholder="Amount">
+							<span class="qb-banking-transferircontainer-reasontext">Reason</span>
+							<input type="text" class="qb-banking-tranferircontainer-reason" placeholder="Reason">
+							<button class="qb-banking-transferir-completar" id="transferirpasta"><i class="fal fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;Transfer</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="qb-banking-bigcontainermyaccount">
+				<div class="qb-banking-myaccount-container">
+					<div class="qb-banking-myaccount-balance">
+						<div class="qb-banking-myaccount-balance-background"></div>
+						<span class="qb-banking-myaccount-balance-text">Balance</span>
+						<span class="qb-banking-myaccount-balance-balance">$ 0</span>
+					</div>
+					<div class="qb-banking-myaccount-info">
+						<span class="qb-banking-myaccount-balance-text">Information</span>
+						<span class="qb-banking-myaccount-info-location"><i class="fal fa-city">&nbsp;&nbsp;&nbsp;</i>City:&nbsp;&nbsp;Star Town Roleplay</span>
+						<span class="qb-banking-myaccount-info-address"><i class="fal fa-map-marker-alt"></i>&nbsp;&nbsp;&nbsp;</i>Address:&nbsp;&nbsp;Loading...</span>
+						<span class="qb-banking-myaccount-info-walletid"><i class="fal fa-wallet"></i>&nbsp;&nbsp;&nbsp;</i>Wallet ID:&nbsp;&nbsp;Loading...</span>
+					</div>
+					<div class="qb-banking-myaccount-security">
+						<span class="qb-banking-myaccount-balance-text">Security</span>
+						<div class="qb-banking-security-2fa-checkmark">
+							<i class="fal fa-shield-check"></i>
+						</div>
+						<span class="qb-banking-security-2fatext">2FA Enabled</span>
+						<i class="fas fa-toggle-on qb-banking-security-2fatext-enabledswitch"></i>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="js/bank.js"></script>
+	<script src="js/fontawesome.js"></script>
+</body>
+</html>

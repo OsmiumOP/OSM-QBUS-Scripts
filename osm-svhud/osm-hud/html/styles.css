@@ -1,0 +1,1067 @@
+#statusHud {
+	width: 14.2%;
+	position: absolute;
+	bottom: 0.5%;
+    left: 1.5%;
+	/* border: 1px solid red; */
+}
+
+#varHealth {
+	width: calc(25% - 2px - 4px);
+	margin-left: 0px !important;
+	position: relative;
+} 
+#varHealth > .barIcon {
+	width: calc(37.5% ) !important;
+	height: 17.5px !important;
+}
+
+#varArmor {
+	width: calc(25% - 4px - 4px);
+}
+
+#varHealth > .barIcon,
+#varArmor > .barIcon {
+	width: 10%;
+}
+#varStress {
+	margin-right: 0px !important;
+}
+
+#varHealth > #boxSetHealth {
+	background: rgb(21, 255, 0);		
+}
+#varHealth > #boxSetHealthBack {
+	background: rgb(245, 241, 12);
+	transition-duration: 0.8s;
+}
+#varArmor > #boxSetArmour {
+	background: rgb(0,66,225);		
+}
+#varOxygen > #boxSetOxygen {
+	background: rgb(22,155,139);		
+}
+#varHunger > #boxSetHunger {
+	background: rgb(249,121,6);		
+}
+#varThirst > #boxSetThirst {
+	background: rgb(25,130,158);	
+}
+#varStress > #boxSetStress {
+	background: rgb(193,39,45);
+}
+
+.bar {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: calc(14.0% - 4px - 4px);
+	height: 25.5px;
+	float: left;
+	border: 2px solid rgba(255,255,255,0.8);
+    z-index: 98;
+}
+
+#boxSetHealth, #boxSetArmour, #boxSetHunger, #boxSetThirst, #boxSetOxygen, #boxSetStress {
+	width: 100%;
+	height: 25.5px;
+	background: rgba(110, 110, 110, 0.5);
+	position: relative;
+	bottom: 0;
+	z-index: 97;
+}
+
+#boxSetHealthBack {
+	width: 100%;
+	height: 25.5px;
+	background: rgba(110, 110, 110, 0.5);
+	position: absolute;
+	bottom: 0;
+	z-index: 95;
+}
+
+.barIcon {
+	width: calc(12.5% - 4px - 4px);
+	height: 17.5px;
+	padding-top: 4px;
+	padding-left: 2px;
+	position: absolute;
+	z-index: 99;
+}
+
+/* new */
+
+.newhud {
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+	display: inline-block;
+}
+
+.healthic{
+	width: 25px;
+	position: absolute;
+	top: 12.5px;
+	z-index: 10000;
+	left: 50%;
+	margin-left: -12.5px;
+	opacity: 0.7;
+}
+
+.shieldic{
+	width: 25px;
+	position: absolute;
+	top: 12.5px;
+	z-index: 10000;
+	left: 50%;
+	margin-left: -12.5px;
+	opacity: 0.7;
+}
+
+.hungeric{
+	width: 25px;
+	position: absolute;
+	top: 14px;
+	z-index: 10000;
+	left: 50%;
+	margin-left: -12.5px;
+	opacity: 0.7;
+}
+
+.thirstic{
+	width: 25px;
+	position: absolute;
+	top: 12px;
+	z-index: 10000;
+	left: 50%;
+	margin-left: -13px;
+	opacity: 0.7;
+}
+
+.oxygenic{
+	width: 22px;
+	position: absolute;
+	top: 14px;
+	z-index: 10000;
+	left: 50%;
+	margin-left: -11px;
+	opacity: 0.7;
+}
+
+.stressic{
+	width: 28px;
+	position: absolute;
+	top: 12px;
+	z-index: 10000;
+	left: 50%;
+	margin-left: -14px;
+	opacity: 0.7;
+}
+
+.voiceic {
+	width: 25px;
+	position: absolute;
+	top: 12.5px;
+	z-index: 10000;
+	left: 50%;
+	margin-left: -12.5px;
+	opacity: 0.7;
+}
+
+.gasic {
+	width: 25px;
+	position: absolute;
+	top: 12.5px;
+	z-index: 10000;
+	left: 50%;
+	margin-left: -12.5px;
+	opacity: 0.7;
+}
+
+.nosic {
+	width: 35px;
+	position: absolute;
+	top: 7px;
+	z-index: 10000;
+	left: 50%;
+	margin-left: -17.5px;
+	opacity: 0.7;
+}
+
+.mphholder{
+	bottom: 25px;
+	left: 310px;
+	display: inline-block;
+	position: absolute;
+}
+
+.gasholder{
+	bottom: 100px;
+	left: 345px;
+	display: inline-block;
+	position: absolute;
+}
+
+.nosholder{
+	bottom: 155px;
+	left: 360px;
+	display: inline-block;
+	position: absolute;
+}
+
+.mphtext {
+	font-family: 'JetBrains Mono', monospace;
+	position: absolute;
+	top: 12px;
+	z-index: 10000;
+	left: 50%;
+	width: 100%;
+	opacity: 0.7;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: -35px;
+	text-align: center;
+	text-justify: center;
+}
+
+.icholder{
+	display: inline-block;
+	position: relative;
+	margin-right: -2px;
+}
+
+#mphsmall {
+	font-size: 17px;
+	bottom: 6px;
+	left: 0px;
+	position: relative;
+}
+
+canvas {
+	opacity:0.7;
+}
+
+.circleedge {
+	width: 46px;
+	height: 46px;
+	
+	position: absolute;
+	display: inline-block;
+	top: 1.5px;
+	left: 1.5px;
+	/*border-style:solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 100%;*/
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75); 
+	border-radius: 100%;
+}
+
+.circleedge2 {
+	width: 64px;
+	height: 64px;
+	
+	position: absolute;
+	display: inline-block;
+	top: 2.6px;
+	left: 2.8px;
+	/*border-style:solid;
+	border-width: 1px;
+	border-color: black;*/
+	border-radius: 100%;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.75); 
+}
+
+.healthveh {
+	bottom: 50px;
+	left: 35px;
+	display: inline-block;
+	position: absolute;
+}
+
+.shieldveh {
+	bottom: 105px;
+	left: 5px;
+	display: inline-block;
+	position: absolute;
+}
+
+.hungerveh {
+	bottom: 160px;
+	left: -10px;
+	display: inline-block;
+	position: absolute;
+}
+
+.thirstveh {
+	bottom: 215px;
+	left: 5px;
+	display: inline-block;
+	position: absolute;
+}
+
+.oxygenveh {
+	bottom: 270px;
+	left: 30px;
+	display: inline-block;
+	position: absolute;
+}
+
+.stressveh {
+	bottom: 315px;
+	left: 80px;
+	display: inline-block;
+	position: absolute;
+}
+
+.voiceveh {
+	bottom: 315px;
+	left: 280px;
+	display: inline-block;
+	position: absolute;
+}
+
+/* 2560x1440 */
+@media only screen and (min-width: 2550px) and (max-width: 2560px) {
+	.healthveh {
+		bottom: 60px!important;
+		left: 100px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 110px;
+		left: 55px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 185px;
+		left: 35px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 265px;
+		left: 35px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 345px;
+		left: 55px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 400px;
+		left: 100px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 400px;
+		left: 410px;
+		display: inline-block;
+		position: absolute;
+	}	
+
+	.mphholder{
+		bottom: 25px;
+		left: 460px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.gasholder{
+		bottom: 100px;
+		left: 495px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.nosholder{
+		bottom: 155px;
+		left: 510px;
+		display: inline-block;
+		position: absolute;
+	}
+}
+
+/* 1920x1440 */
+@media only screen and (min-width: 1919px) and (max-width: 1921px) and (min-height: 1435px) and (max-height: 1445) {
+	.healthveh {
+		bottom: 80px;
+		left: 120px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 110px;
+		left: 55px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 125px;
+		left: 35px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 185px;
+		left: 35px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 245px;
+		left: 55px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 295px;
+		left: 100px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 295px;
+		left: 300px;
+		display: inline-block;
+		position: absolute;
+	}	
+	.mphholder{
+		bottom: 25px;
+		left: 1420px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.gasholder{
+		bottom: 100px;
+		left: 1475px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.nosholder{
+		bottom: 155px;
+		left: 1495px;
+		display: inline-block;
+		position: absolute;
+	}
+}
+
+/* 1920x1200 */
+@media only screen and (min-width: 1910px) and (max-width: 1925px) and (min-height: 1190px) and (max-height: 1224px) {
+	.healthveh {
+		bottom: 40px!important;
+		left: 50px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 95px;
+		left: 25px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 155px;
+		left: 10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 225px;
+		left: 10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 290px;
+		left: 35px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 340px;
+		left: 80px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 340px;
+		left: 315px;
+		display: inline-block;
+		position: absolute;
+	}	
+	.mphholder{
+		bottom: 25px;
+		left: 320px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.gasholder{
+		bottom: 100px;
+		left: 375px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.nosholder{
+		bottom: 155px;
+		left: 395px;
+		display: inline-block;
+		position: absolute;
+	}
+}
+
+/* 1904x1041 */
+@media only screen and (min-width: 1894px) and (max-width: 1909px) {
+	.healthveh {
+		bottom: 30px!important;
+		left: 100px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 70px;
+		left: 55px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 125px;
+		left: 35px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 185px;
+		left: 35px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 245px;
+		left: 55px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 295px;
+		left: 100px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 295px;
+		left: 300px;
+		display: inline-block;
+		position: absolute;
+	}	
+}
+
+/* 1680x1041 */
+@media only screen and (min-width: 1670px) and (max-width: 1685px) {
+	.healthveh {
+		bottom: 30px!important;
+		left: 60px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 70px;
+		left: 15px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 125px;
+		left: -5px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 185px;
+		left: -5px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 245px;
+		left: 15px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 295px;
+		left: 60px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 295px;
+		left: 260px;
+		display: inline-block;
+		position: absolute;
+	}	
+}
+
+/* 1600x1200 */
+@media only screen and (min-width: 1590px) and (max-width: 1600px) and (min-height: 1190px) and (max-height: 1224px)  {
+	.healthveh {
+		bottom: 40px;
+		left: 70px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 90px;
+		left: 25px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 150px;
+		left: 0px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 215px;
+		left: 0px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 285px;
+		left: 25px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 335px;
+		left: 70px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 335px;
+		left: 315px;
+		display: inline-block;
+		position: absolute;
+	}	
+	.mphholder{
+		bottom: 25px;
+		left: 330px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.gasholder{
+		bottom: 100px;
+		left: 375px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.nosholder{
+		bottom: 155px;
+		left: 400px;
+		display: inline-block;
+		position: absolute;
+	}
+}
+
+/* 1600x1024 */
+@media only screen and (min-width: 1590px) and (max-width: 1600px) and (min-height: 1014px) and (max-height: 1024px)  {
+	.healthveh {
+		bottom: 30px;
+		left: 60px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 70px;
+		left: 15px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 125px;
+		left: -5px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 185px;
+		left: -5px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 245px;
+		left: 15px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 295px;
+		left: 60px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 295px;
+		left: 260px;
+		display: inline-block;
+		position: absolute;
+	}	
+
+}
+
+/* 1600x900 */
+@media only screen and (min-width: 1590px) and (max-width: 1600px) and (min-height: 890px) and (max-height: 900px) {
+	.healthveh {
+		bottom: 10px;
+		left: 50px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 50px;
+		left: 5px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 105px;
+		left: -10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 160px;
+		left: -10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 215px;
+		left: 5px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 255px;
+		left: 50px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 255px;
+		left: 225px;
+		display: inline-block;
+		position: absolute;
+	}
+}
+
+/* 1440x900 */
+@media only screen and (min-width: 1430px) and (max-width: 1440px) and (min-height: 890px) and (max-height: 900px) {
+	.healthveh {
+		bottom: 15px!important;
+		left: 45px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 60px!important;
+		left: 10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 110px!important;
+		left: -10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 165px!important;
+		left: -10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 220px!important;
+		left: 10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 255px!important;
+		left: 60px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 255px!important;
+		left: 215px;
+		display: inline-block;
+		position: absolute;
+	}
+}
+
+/* 1360x768 & 1366x768 */
+@media only screen and (min-width: 1350px) and (max-width: 1371px) and (min-height: 758px) and (max-height: 773px) {
+	.healthveh {
+		bottom: 5px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 55px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 105px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 155px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 205px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 255px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 305px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	.mphholder{
+		bottom: 15px;
+		left: 210px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.gasholder{
+		bottom: 80px;
+		left: 255px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.nosholder{
+		bottom: 135px;
+		left: 265px;
+		display: inline-block;
+		position: absolute;
+	}
+}
+
+/* 1280x960 */
+@media only screen and (min-width: 1270px) and (max-width: 1285px) and (min-height: 950px) and (max-height: 965px) {
+	.healthveh {
+		bottom: 25px!important;
+		left: 45px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 70px!important;
+		left: 10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 120px!important;
+		left: -10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 175px!important;
+		left: -10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 230px!important;
+		left: 10px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 275px!important;
+		left: 60px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 275px!important;
+		left: 225px;
+		display: inline-block;
+		position: absolute;
+	}
+}
+
+/* 1280x720 & 1280x768 & 1280x800 */
+@media only screen and (min-width: 1270px) and (max-width: 1285px) and (min-height: 710px) and (max-height: 810px) {
+	.healthveh {
+		bottom: 5px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.shieldveh {
+		bottom: 55px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.hungerveh {
+		bottom: 105px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.thirstveh {
+		bottom: 155px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.oxygenveh {
+		bottom: 205px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.stressveh {
+		bottom: 255px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.voiceveh {
+		bottom: 305px!important;
+		left: -20px;
+		display: inline-block;
+		position: absolute;
+	}
+	.mphholder{
+		bottom: 15px;
+		left: 210px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.gasholder{
+		bottom: 80px;
+		left: 255px;
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.nosholder{
+		bottom: 135px;
+		left: 265px;
+		display: inline-block;
+		position: absolute;
+	}
+}

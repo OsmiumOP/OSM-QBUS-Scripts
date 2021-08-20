@@ -1,0 +1,8 @@
+Config = {}
+
+-- TIME AFTER WHICH TIME BASED REP SHOULD BE ADDED
+Config.Time = 60
+
+-- AFTER Config.Time MINUTES - THIS MUCH POINTS WILL BE REWARDED
+Config.TimeBasedRep = 5
+

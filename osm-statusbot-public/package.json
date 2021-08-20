@@ -1,0 +1,24 @@
+{
+  "name": "fivem-statusbot",
+  "version": "1.0.0",
+  "description": "FiveM Server Status",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "update": "git pull && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roque | Reworked by Osmium",
+  "license": "CC BY-NC-ND 4.0",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "fetch-timeout": "0.0.2",
+    "libsodium-wrappers": "^0.7.4",
+    "node-fetch": "^1.6.3",
+    "uws": "^100.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OsmiumOP/osm-statusbot.git"
+  }
+}

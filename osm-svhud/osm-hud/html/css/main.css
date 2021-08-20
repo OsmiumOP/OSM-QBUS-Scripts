@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700&display=swap');
+
+@font-face {
+    font-family: 'pricedownblack';
+    src: url('pricedown_bl-webfont.woff2') format('woff2'),
+         url('pricedown_bl-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gta-ui';
+    src: url('gta-ui.ttf');
+}
+
+@font-face {
+    font-family: 'pdown';
+    src: url('pdown.ttf');
+}
+html {
+    overflow: hidden;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.money-container {
+    position: absolute;
+    right: 5vw;
+    top: 7vh;
+}
+
+#cash {
+    color: white;
+}
+
+.money-cash,.money-bank {
+    display: none;
+    float:right;
+    font-family: 'pdown';
+    font-weight: 400;
+    font-size: 29px;
+    color: white;
+    padding: 4px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin: 0;
+    margin-right: 6px;
+    margin-top: 6px;
+    padding: 0;
+}
+
+.money-cash {
+    color: rgb(210, 210, 210);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+}
+
+.money-bank {
+    color: rgb(167, 167, 167);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    top: 55px;
+}
+
+#plus-changeamount {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #f0f0f0;
+}
+
+#minus-changeamount {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #f0f0f0;
+}
+
+.minus {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #801e1f;
+}
+
+.munnie {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #277418;
+}
+
+.moneyupdate {
+    float: right;
+    padding-left: 0.5vw;
+}
+
+.plus {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: right;
+    color: #277418;
+}
+
+.ui-container {
+    display: none;
+    font-size: 10vh;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    letter-spacing: .1vh;
+}
+
+.ui-car-container {
+    display: none;
+}
+
+.ui-car-time {
+    display: block !important;
+    position: absolute;
+    font-size: 1.5vh;
+    bottom: 4.5vw;
+    left: 17vw;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.ui-car-meters {
+    display: block !important;
+    position: absolute;
+    font-size: 1.5vh;
+    bottom: 4.5vw;
+    left: 20.5vw;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.car-info {
+    position: relative;
+    float: left;
+}
+
+.ui-car-otherinfo {
+    position: absolute;
+    height: 3vh;
+    min-width: 5vh;
+    width: fit-content;
+    bottom: 4.15vh;
+    left: 17vw;
+    line-height: 3vh;
+    color: white;
+    font-size: 1.6vh;
+    /* background-color: black; */
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.info-label {
+    position: relative;
+    top: -.35vh;
+    font-size: 1vh;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.ui-car-street {
+    font-size: 15px;
+    position: absolute;
+    bottom: 0.28vh;
+    left: 23.5vw;
+    text-shadow: 1px 1px 0px #000000;
+    color: #ffffff;
+}
+
+.car-engine-info img {
+    width: 3vh;
+}
+
+.car-seatbelt-info img {
+    width: 3vh;
+}
+
+.seatbelt-text {
+    font-size: 1.45vh;
+    color: #46ad34;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+/* NEW UI */
+
+.ui-bars-container {
+    position: absolute;
+    left: 2vh;
+    width: 2.5vh;
+    height: 24vh;
+    bottom: 4vh;
+}
+
+/* Container Styling */
+
+.hp-circle {
+    position: absolute;
+    top: 2.5vh;
+    left: 0vh;
+}
+
+.armor-circle {
+    position: absolute;
+    top: 6.5vh;
+    left: 0vh;
+}
+
+.food-circle {
+    position: absolute;
+    top: 10.5vh;
+    left: 0vh;
+}
+
+.thirst-circle {
+    position: absolute;
+    top: 14.5vh;
+    left: 0vh;
+}
+
+.stress-circle {
+    position: absolute;
+    top: 18.5vh;
+    left: 0vh;
+}
+
+.fuel-circle {
+    position: absolute;
+    top: -6.5vh;
+    left: 4vh;
+}
+
+.voice-block {
+    display: inline-block;
+    border-radius: 50%;
+    height: .7vh;
+    width: .7vh;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+[data-voicetype="3"] {
+    position: absolute;
+    top: 2.4vh;
+    left: .2vh;
+}
+
+[data-voicetype="2"] {
+    position: absolute;
+    top: 2vh;
+    left: 1.35vh;
+}
+
+[data-voicetype="1"] {
+    position: absolute;
+    top: 2.4vh;
+    left: 2.5vh;
+}
+
+
+.progress {
+    -webkit-transition: 0.35s stroke-dashoffset;
+    -o-transition: 0.35s stroke-dashoffset;
+    transition: 0.35s stroke-dashoffset;
+    -webkit-transform: rotate(140deg);
+    -ms-transform: rotate(140deg);
+    transform: rotate(140deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  .progressplayer {
+    -webkit-transition: 0.35s stroke-dashoffset;
+    -o-transition: 0.35s stroke-dashoffset;
+    transition: 0.35s stroke-dashoffset;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  .backgroundCircle {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  .circle-icon {
+      font-size: 1.5vh;
+      color: white;
+  }
+
+  @keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 #BF360C;
+	}
+	50% {
+		box-shadow: 0 0 0 5px #bf360cb9;
+	}
+	100% {
+		box-shadow: 0 0 0 0 #bf360c85;
+	}
+}
+
+.car-belt {
+    position: absolute;
+    top: -10vh;
+    left: 4.8vh;
+    border: 3px solid #BF360C;
+    border-radius: 50%;
+    width: 3.5vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 3.5vh;
+    animation: pulse 2s infinite;
+}
+
+.car-belt i {
+    color: rgb(136, 136, 136);
+    padding: .9vh;
+    font-size: 1.2vh;
+   }
+   
+
+   .car-speedo {
+    left: 6vh;
+    top: -2.5vh;
+    position: absolute;
+    border-top: 3px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+    border-right: 3px solid transparent;
+    border-left: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 32px;
+    transform: rotate(345deg);
+   }
+
+   .speed-type {
+    font-size: 14px;
+   }
+   
+   
+   .car-speedcounter {
+    position: absolute;
+    top: -1vh;
+    left: 8vh;
+    width: 20vh;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px black;
+   }
+   

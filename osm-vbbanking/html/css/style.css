@@ -1,0 +1,1251 @@
+body {
+display: none;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../img/fonts/Gilroy-Light.otf);
+}
+
+.qb-banking-container {
+    position: absolute;
+    width: 87vh;
+    height: 56vh;
+    left: 25%;
+    background: rgba(34,36,44,255);
+    border-radius: 3.5vh;
+}
+
+.qb-banking-rightbar {
+    position: absolute;
+    height: 100%;
+    width: 20vh;
+    left: 2vh;
+}
+
+.qb-banking-rightbar:after {
+    content:"";
+    position:absolute;
+    top:4vh;
+    left:21vh;
+    width:2px;
+    height:85%;
+    background:rgba(50,50,66,255);
+}
+
+.qb-banking-rightbar-header {
+    position: relative;
+    width: 100%;
+}
+
+.qb-banking-rightbar-misdibanklogo {
+    position: absolute;
+    width: 4vh;
+    height: auto;
+    left: 1vh;
+    margin-top: 3vh;
+}
+
+.qb-banking-rightbar-misdibanktext {
+    position: absolute;
+    color: white;
+    font-size: 1em;
+    font-family: Gilroy;
+    left: 5.5vh;
+    margin-top: 4.2vh;
+}
+
+.qb-banking-rightbar-options {
+    position: relative;
+    margin-top: 12vh;
+    width: 100%;
+    height: 29vh;
+}
+
+.qb-banking-rightbar-options-buttons {
+    position:relative;
+    width: 100%;
+    height: 5vh;
+    border-radius: 1vh;
+}
+
+.qb-banking-rightbar-options-buttons:hover {
+    background-color: rgb(114, 114, 114);
+}
+
+.qb-banking-rightbar-options-bottomoptions {
+    position: relative;
+    margin-top: 3vh;
+    width: 100%;
+}
+
+.casica {
+    position: absolute;
+    top: 30%;
+    left: 2vh;
+    color: white;
+    font-size: 1em;
+}
+
+.qb-banking-rightbar-text {
+    position: absolute;
+    top: 30%;
+    left: 5vh;
+    font-weight: 500;
+    font-family: Gilroy;
+    color: white;
+    font-size: 1em;
+}
+
+.creditcard {
+    position: absolute;
+    top: 30%;
+    left: 2vh;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.qb-banking-inicio-bigcontainer {
+    position: absolute;
+    top: 3vh;
+    left: 27vh;
+    width: 58vh;
+    height: 47.5vh;
+}
+
+.qb-banking-inicio-bigcontainer-adcontainer {
+    position: absolute;
+    width: 97%;
+    height:17vh;
+    border-radius: 3.5vh;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.qb-banking-inicio-bigcontainer-balancecontainer {
+    position: absolute;
+    width: 47%;
+    height: 30vh;
+    top: 20vh;
+    border-radius: 3.5vh;
+    background: rgba(43,44,57,255);
+}
+
+.qb-banking-inicio-bigcontainer-withdrawandallofthatstuff {
+    position: absolute;
+    width: 45%;
+    height: 30vh;
+    top: 19vh;
+    left: 52%;
+}
+
+.adcontainer-title {
+    position:absolute;
+    top: 3vh;
+    left: 3vh;
+    font-weight: bolder;
+    font-family: Gilroy;
+    font-size: 1rem;
+    color: white;
+}
+
+.adcontainer-descripcion {
+    position:absolute;
+    top: 6.5vh;
+    left: 3vh;
+    margin-right: 20vh;
+    font-family: Gilroy;
+    font-size: 0.6rem;
+    color: white;
+}
+
+.adcontainer-button {
+    position: absolute;
+    top: 11vh;
+    left: 3vh;
+    width:15vh;
+    height:4vh;
+    background: rgba(97,96,220,255);
+    outline: none;
+    font-family: Gilroy;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 1vh;
+}
+
+.adcontainer-button:hover {
+    background-color: rgb(70, 70, 237);
+}
+
+.qb-banking-balancecontainer-creditcard {
+    position: absolute;
+    top: 3vh;
+    left: 2.7vh;
+    width: 80%;
+    height: 13vh;
+    border-radius: 1vh;
+    background: white;
+    background-image: url("https://i.imgur.com/p1QG3AV.jpg");
+    background-size: cover;
+}
+
+.qb-banking-balancecontainer-creditcard-background {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 2, 29, 0.45);
+    border-radius: 1vh;
+}
+
+.qb-banking-creditcard-visalogo {
+    position: absolute;
+    top: 1.5vh;
+    left: 16vh;
+    width: 4vh;
+    height: auto;
+}
+
+.qb-banking-creditcard-chip {
+    position: absolute;
+    top: 1.5vh;
+    left: 2vh;
+    width: 3vh;
+    height: auto;
+}
+
+.qb-banking-creditcard-number {
+    position: absolute;
+    top: 6vh;
+    left: 2vh;
+    font-family: Gilroy;
+    font-size: 0.7rem;
+    color: white;
+}
+
+.qb-banking-creditcard-cardholdertext {
+    position: absolute;
+    top: 9vh;
+    left: 2vh;
+    font-family: Gilroy;
+    font-size: 0.5rem;
+    color: rgb(187, 187, 187);
+}
+
+.qb-banking-creditcard-validtext {
+    position: absolute;
+    top: 9vh;
+    left: 16vh;
+    font-family: Gilroy;
+    font-size: 0.5rem;
+    color: rgb(187, 187, 187);
+}
+
+.qb-banking-creditcard-cardholder {
+    position: absolute;
+    top: 10.5vh;
+    left: 2vh;
+    font-family: Gilroy;
+    font-size: 0.6rem;
+    color: white;
+}
+
+.qb-banking-creditcard-valid {
+    position: absolute;
+    top: 10.5vh;
+    left: 16vh;
+    font-family: Gilroy;
+    font-size: 0.6rem;
+    color: white;
+}
+
+.qb-banking-balancecontainer-balancediv {
+    position: absolute;
+    top: 18vh;
+    height: 10vh;
+    width: 100%;
+}
+
+.qb-banking-balancecontainer-balancediv:before {
+    content : "";
+    position: absolute;
+    bottom  : 2vh;
+    height  : 1px;
+    width   : 80%;
+    border-bottom: 2px solid rgba(50,50,66,255);
+    left: 10%;
+}
+
+.qb-balance-balancetext {
+    position: absolute;
+    top: 1vh;
+    left: 3vh;
+    font-family: Gilroy;
+    font-size: 0.6rem;
+    color: rgb(155, 155, 155);
+}
+
+.qb-balance-balance {
+    position:absolute;
+    top: 3vh;
+    left: 3vh;
+    font-weight: bolder;
+    font-family: Gilroy;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.qb-balance-buttonadd {
+    position: absolute;
+    top: 1vh;
+    left: 19vh;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 1.5vh;
+    background:rgba(97,96,221,255);
+}
+
+.meterpasta {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.qb-balance-creditstext {
+    position: absolute;
+    top: 9vh;
+    left: 3vh;
+    font-family: Gilroy;
+    font-size: 0.6rem;
+    color: rgb(155, 155, 155);
+}
+
+.qb-withdrawandallofthatstuff-withdrawtext {
+    position:absolute;
+    top: 2vh;
+    left: 3vh;
+    font-weight: bold;
+    font-family: Gilroy;
+    font-size: 0.6rem;
+    color: white;
+}
+
+.qb-withdrawandallofthatstuff-accountdiv {
+    position: absolute;
+    top: 6vh;
+    left: 2.7vh;
+    width: 80%;
+    height: 6vh;
+    background: rgba(43,44,57,255); 
+    border-radius: 1vh;
+}
+
+.qb-withdrawandallofthatstuff-amounetcdiv {
+    position: absolute;
+    top: 13vh;
+    left: 2.7vh;
+    width: 80%;
+    height: 10vh;
+    background: rgba(43,44,57,255); 
+    border-radius: 1vh;
+}
+
+.qb-withdrawandallofthatstuff-withdrawbutton {
+    position: absolute;
+    top: 25vh;
+    left: 2.7vh;
+    width: 80%;
+    height: 4vh;
+    background: rgba(35,61,199,255); 
+    border-radius: 1vh;
+    font-family: Gilroy;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.qb-withdrawandallofthatstuff-withdrawbutton:hover {
+    top: 24vh;
+    background: rgb(51, 79, 216);
+    width: 85%;
+    left: 2vh;
+}
+
+.qb-banking-accountdiv-misdibanklogo {
+    position: absolute;
+    width:3vh;
+    height:auto;
+    top: 1.5vh;
+    left: 2vh;
+}
+
+.qb-banking-accountdiv-accountnumber {
+    position: absolute;
+    top: 2vh;
+    left: 7vh;
+    font-family: Gilroy;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: white;
+}
+
+.simbolicocambiarcuenta {
+    position: absolute;
+    top: 2.3vh;
+    left: 17vh;
+    font-size: 0.6rem;
+    color: white;
+}
+
+.qb-withdrawandallofthatstuff-amounttext {
+    position: absolute;
+    top: 1.5vh;
+    left: 2vh;
+    font-family: Gilroy;
+    font-size: 13px;
+    color: rgb(109, 123, 160);
+}
+
+.qb-withdrawandallofthatstuff-dollarsymbol {
+    position:absolute;
+    top: 4vh;
+    left: 2vh;
+    font-family: Gilroy;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.qb-withdrawandallofthatstuff-inputamount {
+    position: absolute;
+    top: 3.8vh;
+    left: 4vh;
+    width: 13vh;
+    background:none;
+    font-family: Gilroy;
+    font-size: 1.8rem;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.qb-withdrawandallofthatstuff-inputamount::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.noselect {
+    user-select: none; 
+}
+
+.select {
+    user-select: all; 
+}
+
+.qb-banking-bigcontainertarjetas {
+    position: absolute;
+    display: none;
+}
+
+.qb-banking-tarjetas-container {
+    position: absolute;
+    left: 28vh;
+    width: 59vh;
+    height: 56vh;
+    border-radius: 3.7vh;
+}
+
+.qb-banking-tarjetas-rightbar {
+    position: absolute;
+    left: 38vh;
+    width: 21vh;
+    height: 56vh;
+    background: rgba(39,43,47,255);
+    border-top-right-radius: 3.7vh;
+    border-bottom-right-radius: 3.7vh;
+}
+
+.qb-banking-tarjetas-rigthbar-balancecontainer {
+    position: absolute;
+    top: 4vh;
+    left: 2.5vh;
+    width: 16vh;
+    height: 9vh;
+    background:rgba(35,38,42,255);
+    border-radius: 0.5vh;
+}
+
+.qb-banking-tarjetas-rigthbar-balance {    
+    position:absolute;
+    top: 2vh;
+    left: 3vh;
+    font-weight: bolder;
+    text-shadow: 1px 0 #888888;
+    font-family: Gilroy;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.qb-banking-tarjetas-rigthbar-currentbalance {    
+    position:relative;
+    top: 5.5vh;
+    left: 3vh;
+    font-weight: bolder;
+    font-family: Gilroy;
+    font-size: 0.6rem;
+    color: #4e69c0;
+}
+
+.qb-banking-history {
+    position:absolute;
+    top: 16vh;
+    left: 2vh;
+    font-weight: bolder;
+    text-shadow: 1px 0 #888888;
+    font-family: Gilroy;
+    font-size: 20px;
+    color: white;
+}
+
+.qb-banking-tarjetas-mycardcontainer {
+    position:absolute;
+    top: 26vh;
+    left: 2.5vh;
+    width: 28vh;
+    height: 30vh;
+    border-top-right-radius: 2.5vh;
+    border-top-left-radius: 2.5vh;
+    background: rgba(43,44,57,255);
+}
+
+.qb-banking-tarjetas-mycardcontainer-mycardstext {
+    position:absolute;
+    top: 5vh;
+    left: 0vh;
+    font-weight: bolder;
+    text-shadow: 1px 0 #888888;
+    font-family: Gilroy;
+    font-size: 0.6rem;
+    color: white;
+}
+
+.qb-banking-tarjetas-card {
+    position: absolute;
+    width: 15vh;
+    height: 18vh;
+    background-image: url(../img/creditcard2.png);
+    background-repeat: no-repeat;
+    background-size: 15vh;
+    top: -14vh;
+    left: 6.5vh;
+    border-radius: 1.5vh;
+}
+
+.qb-banking-tarjetas-card-misdibanklogo {
+    position: absolute;
+    top: 1vh;
+    left: 1.5vh;
+    width: 3vh;
+    height: auto;
+}
+
+.qb-banking-tarjetas-card-misdibanktext {
+    position: absolute;
+    top: 2vh;
+    left: 5vh;
+    font-family: Gilroy;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: white;
+}
+
+.qb-banking-tarjetas-mycardcontainer-balance {    
+    position:absolute;
+    top: 7vh;
+    right: 10vh;
+    font-weight: bolder;
+    text-shadow: 1px 0 #888888;
+    font-family: Gilroy;
+    font-size: 1rem;
+    color: white;
+}
+
+.qb-banking-tarjetas-mycardcontainer-totalbalancetext {
+    position:absolute;
+    top: 11vh;
+    left: 9vh;
+    text-shadow: 1px 0 #888888;
+    font-family: Gilroy;
+    font-size: 1rem;
+    color: rgb(143, 143, 143);
+}
+
+.qb-banking-tarjetas-mycardcontainer-buttonadd {
+    position: absolute;
+    top: 7vh;
+    left: 21vh;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    background:rgba(97,96,221,255);
+}
+
+.meterpasta2 {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    font-size: 1rem;
+    color: white;
+}
+
+.qb-banking-tarjetas-mycardcontainer-history {
+    position: absolute;
+    top: 20vh;
+    left: 5vh;
+    width: 30vh;
+    height: auto;
+}
+
+.qb-banking-tarjetas-historytext {
+    position: absolute;
+    top: 15vh;
+    left: 3vh;
+    font-size: 15px;
+    font-family: Gilroy;
+    font-weight: bold;
+    color: white;
+}
+
+.qb-banking-tarjetas-historytransactions {
+    position: absolute;
+    top: 18vh;
+    left: 3vh;
+    width: 22vh;
+    height: 10vh;
+}
+
+.qb-banking-historytransactions-transaction {
+    position: relative;
+    width: 22vh;
+    height: 5vh;
+}
+
+.qb-transaction-logotransaction {
+    position: absolute;
+    top: 0.5vh;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    background: rgba(24,217,96,255);
+}
+
+.logomarca {
+    position: absolute;
+    top: 1vh;
+    left: 0.9vh;
+    font-size: 25px;
+    color: white;
+}
+
+.qb-transaction-textmarca {
+    position: absolute;
+    top: 1vh;
+    left: 5vh;
+    color: white;
+    font-size: 13px;
+    font-family: Gilroy;
+}
+
+.qb-transaction-textdescripcion {
+    position: absolute;
+    top: 2.5vh;
+    left: 5vh;
+    color: rgb(150, 150, 150);
+    font-size: 10px;
+    font-family: Gilroy;
+}
+
+.qb-transaction-textprice {
+    position: absolute;
+    top: 1.5vh;
+    left: 17vh;
+    color: white;
+    font-size: 13px;
+    font-family: Gilroy;
+}
+
+.qb-transaction-logotransaction2 {
+    position: absolute;
+    top: 0.5vh;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1vh;
+    background: black;
+}
+
+.logomarca2 {
+    position: absolute;
+    top: 0.9vh;
+    left: 1.1vh;
+    font-size: 25px;
+    color: white;
+}
+
+.qb-transaction-textprice2 {
+    position: absolute;
+    top: 1.5vh;
+    left: 16vh;
+    color: white;
+    font-size: 13px;
+    font-family: Gilroy;
+}
+
+.qb-banking-rightbar-historycontainer {
+    position: absolute;
+    top: 20vh;
+    left: 2vh;
+    width: 17vh;
+    height: 30vh;
+}
+
+.qb-rightbar-historytransactions-transaction {
+    position: relative;
+    width: 22vh;
+    height: 5vh;
+}
+
+.qb-rightbar-transaction-logotransaction {
+    position: absolute;
+    top: 0.5vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 1vh;
+    background: rgba(24,217,96,255);
+}
+
+.qb-rightbar-transaction-logomarca {
+    position: absolute;
+    top: 0.6vh;
+    left: 0.6vh;
+    font-size: 25px;
+    color: white;
+}
+
+.qb-rightbar-transaction-textmarca {
+    position: absolute;
+    top: 1vh;
+    left: 4vh;
+    color: white;
+    font-size: 13px;
+    font-family: Gilroy;
+}
+
+.qb-rightbar-transaction-textdescription {
+    position: absolute;
+    top: 2.5vh;
+    left: 4vh;
+    color: rgb(150, 150, 150);
+    font-size: 10px;
+    font-family: Gilroy;
+}
+
+.qb-rightbar-transaction-textprice {
+    position: absolute;
+    top: 1.5vh;
+    left: 14vh;
+    color: rgba(183,78,71,255);
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: Gilroy;
+}
+
+.qb-rightbar-transaction-logotransaction2 {
+    position: absolute;
+    top: 0.5vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 1vh;
+    background: black;
+}
+
+.qb-rightbar-transaction-logomarca2 {
+    position: absolute;
+    top: 0.6vh;
+    left: 0.8vh;
+    font-size: 25px;
+    color: white;
+}
+
+.qb-rightbar-transaction-logotransaction3 {
+    position: absolute;
+    top: 0.5vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 1vh;
+    background: white;
+}
+
+.qb-rightbar-transaction-logomarca3 {
+    position: absolute;
+    top: 0.6vh;
+    left: 0.7vh;
+    font-size: 25px;
+    color: rgba(140,158,255,255);
+}
+
+.qb-rightbar-transaction-logotransaction4 {
+    position: absolute;
+    top: 0.5vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 1vh;
+    background: rgba(254,154,0,255);
+}
+
+.qb-rightbar-transaction-logomarca4 {
+    position: absolute;
+    top: 0.6vh;
+    left: 0.7vh;
+    font-size: 25px;
+    color: white;
+}
+
+.qb-rightbar-transaction-logotransaction5 {
+    position: absolute;
+    top: 0.5vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 1vh;
+    background: white;
+}
+
+.qb-rightbar-transaction-logomarca5 {
+    position: absolute;
+    top: 0.6vh;
+    left: 0.6vh;
+    font-size: 25px;
+    color: rgba(255,148,22,255);
+}
+
+.qb-rightbar-transaction-logotransaction6 {
+    position: absolute;
+    top: 0.5vh;
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 1vh;
+    background: rgba(0,55,145,255);
+}
+
+.qb-rightbar-transaction-logomarca6 {
+    position: absolute;
+    top: 0.6vh;
+    left: 0.5vh;
+    font-size: 25px;
+    color: white;
+}
+
+.qb-banking-bigcontainerdepositar {
+    position: absolute;
+    display: none;
+}
+
+.qb-banking-depositar-container {
+    position: absolute;
+    left: 28vh;
+    width: 59vh;
+    height: 56vh;
+    border-radius: 3.7vh;
+}
+
+.qb-banking-depositcontainer {
+    position: absolute;
+    top: 11vh;
+    left: 1.5vh;
+    width: 30vh;
+    height: 40vh;
+    border-radius: 2vh;
+    background: rgba(43,44,57,255);
+}
+
+.qb-banking-depositcontainer-creditcard {
+    position: absolute;
+    top: -7vh;
+    left: 4vh;
+    width: 75%;
+    height: 14vh;
+    border-radius: 2vh;
+    background: white;
+    background-image: url("https://i.imgur.com/p1QG3AV.jpg");
+    background-size: cover;
+}
+
+.qb-banking-depositcontainer-creditcard-background {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 2, 29, 0.45);
+    border-radius: 2vh;
+}
+
+.qb-banking-depositcontainer-buttoncontainer {
+    position: absolute;
+    top: 14vh;
+    left: 2.5vh;
+    display: inline;
+}
+
+.qb-banking-buttoncontainer-button {
+    position: relative;
+    width: 12.5vh;
+    display: inline-block;
+    height:4vh;
+    text-align: center;
+    justify-content: center;
+    font-family: Gilroy;
+    background: none;
+    font-size: 15px;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.button2 {
+    border-bottom: 2px solid rgba(50,50,66,255);
+}
+
+.qb-banking-depositcontainer-depositmoneydiv {
+    position: absolute;
+    top: 21vh;
+    left: 2.7vh;
+    width: 82%;
+    height: 10vh;
+    background: rgb(36, 37, 48); 
+    border-radius: 1vh;
+}
+
+.qb-banking-depositcontainer-completarbutton {
+    position: absolute;
+    top: 33vh;
+    left: 2.7vh;
+    width: 80%;
+    height: 4vh;
+    background: rgba(35,61,199,255); 
+    border-radius: 1vh;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.qb-banking-depositcontainer-completarbutton:hover {
+    top: 32vh;
+    background: rgb(51, 79, 216);
+    width: 80%;
+}
+
+.qb-banking-bigcontainertransfer {
+    position: absolute;
+    display: none;
+}
+
+.qb-banking-transferir-container {
+    position: absolute;
+    left: 28vh;
+    width: 59vh;
+    height: 56vh;
+    border-radius: 3.7vh;
+}
+
+.qb-banking-transferircontainer {
+    position: absolute;
+    top: 11vh;
+    left: 1.5vh;
+    width: 30vh;
+    height: 40vh;
+    border-radius: 2vh;
+    background: rgba(43,44,57,255);
+}
+
+.qb-banking-depositcontainer-title {
+    position:absolute;
+    top: 10vh;
+    left: 7vh;
+    font-weight: bold;
+    font-family: Gilroy;
+    font-size: 23px;
+    color: white
+}
+
+.qb-banking-transferircontainer-payto {
+    position:absolute;
+    top: 20vh;
+    left: 3vh;
+    font-weight: bold;
+    font-family: Gilroy;
+    font-size: 12px;
+    color: white
+}
+
+.qb-banking-tranferircontainer-iduser {
+    position: absolute;
+    top: 22vh;
+    left: 3vh;
+    width: 24vh;
+    height: 3vh;
+    border-radius: 3vh;
+    background: rgb(33, 34, 44);
+    border:none;
+    outline:none;
+    text-align: center;
+    color: white;
+}
+
+.qb-banking-tranferircontainer-iduser::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.qb-banking-transferircontainer-quantitytext {
+    position:absolute;
+    top: 26vh;
+    left: 3vh;
+    font-weight: bold;
+    font-family: Gilroy;
+    font-size: 12px;
+    color: white
+}
+
+.qb-banking-tranferircontainer-quantity {
+    position: absolute;
+    top: 28vh;
+    left: 3vh;
+    width: 11vh;
+    height: 3vh;
+    border-radius: 3vh;
+    background: rgb(33, 34, 44);
+    border:none;
+    outline:none;
+    text-align: center;
+    color: white;
+}
+
+.qb-banking-tranferircontainer-quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.qb-banking-transferir-completar {
+    position: absolute;
+    top: 33vh;
+    left: 2.7vh;
+    width: 80%;
+    height: 4vh;
+    background: rgba(35,61,199,255); 
+    border-radius: 1vh;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.qb-banking-transferir-completar:hover {
+    top: 32vh;
+    background: rgb(51, 79, 216);
+    width: 85%;
+    left: 2vh;
+}
+
+.qb-banking-transferircontainer-reasontext {
+    position:absolute;
+    top: 26vh;
+    left: 16vh;
+    font-weight: bold;
+    font-family: Gilroy;
+    font-size: 12px;
+    color: white
+}
+
+.qb-banking-tranferircontainer-reason {
+    position: absolute;
+    top: 28vh;
+    left: 15vh;
+    width: 11vh;
+    height: 3vh;
+    border-radius: 3vh;
+    background: rgb(33, 34, 44);
+    border:none;
+    outline:none;
+    text-align: center;
+    color: white;
+}
+
+.qb-banking-tranferircontainer-reason::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.qb-banking-bigcontainermyaccount {
+    position: absolute;
+    display: none;
+}
+
+.qb-banking-myaccount-container {
+    position: absolute;
+    left: 28vh;
+    width: 59vh;
+    height: 56vh;
+    border-radius: 3.7vh;
+}
+
+.qb-banking-myaccount-balance {
+    position: absolute;
+    top:5vh;
+    left:1.5vh;
+    width:30vh;
+    height:13vh;
+    border-radius: 2vh;
+}
+
+.qb-banking-myaccount-balance-background {
+    position: absolute;
+    width:100%;
+    height:100%;
+    border-radius: 2vh;
+    background-image: url(../img/gradient1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.qb-banking-myaccount-balance-text {
+    position:absolute;
+    top: 2vh;
+    left: 3vh;
+    font-weight: bold;
+    font-family: Gilroy;
+    font-size: 15px;
+    color: white
+}
+
+.qb-banking-myaccount-balance-balance {
+    position:absolute;
+    top: 5vh;
+    left: 3vh;
+    font-weight: bold;
+    font-family: Gilroy;
+    font-size: 35px;
+    color: white
+}
+
+.qb-banking-myaccount-info {
+    position: absolute;
+    top:20.5vh;
+    width:30vh;
+    left:1.5vh;
+    height:13vh;
+    border-radius: 2vh;
+    background: rgba(43,44,57,255);
+}
+
+.qb-banking-myaccount-info-location {
+    position:absolute;
+    top: 5vh;
+    left: 3vh;
+    font-family: Gilroy;
+    font-size: 13px;
+    color: white
+}
+
+.qb-banking-myaccount-info-address {
+    position:absolute;
+    top: 7vh;
+    left: 3vh;
+    font-family: Gilroy;
+    font-size: 13px;
+    color: white
+}
+
+.qb-banking-myaccount-info-walletid {
+    position:absolute;
+    top: 9vh;
+    left: 3vh;
+    font-family: Gilroy;
+    font-size: 13px;
+    color: white
+}
+
+.qb-banking-myaccount-security {
+    position: absolute;
+    top:36vh;
+    width:30vh;
+    left:1.5vh;
+    height:13vh;
+    border-radius: 2vh;
+    background: rgba(43,44,57,255);
+}
+
+.qb-banking-security-2fa-checkmark {
+    position: absolute;
+    top:5vh;
+    left: 3vh;
+    width:5vh;
+    height:5vh;
+    border-radius: 1vh;
+    background: rgb(39, 40, 51);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qb-banking-security-2fatext {
+    position:absolute;
+    top: 6.5vh;
+    left: 10vh;
+    font-weight: bold;
+    font-family: Gilroy;
+    font-size: 13px;
+    color: white
+}
+
+.qb-banking-security-2fatext-enabledswitch {
+    position: absolute;
+    top: 5.5vh;
+    left: 22vh;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.qb-banking-inicio-bigcontainerfaq {
+    position: absolute;
+    top: 3vh;
+    left: 27vh;
+    width: 58vh;
+    height: 47.5vh;
+}
+
+.qb-banking-faq-container {
+    position: absolute;
+    left: 28vh;
+    width: 59vh;
+    height: 56vh;
+    border-radius: 3.7vh;
+}

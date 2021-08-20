@@ -1,0 +1,172 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous">
+    <style>
+        #buyUI, #allUI, #sellUI, #general, #topbar, #waiting
+        {display: none;}
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div id="result"></div>
+        <div class="topbar" id="topbar">
+            <nav>
+                <div class="logo-topbar"></div>
+                <button id="close" class="btn-sign-out">Close<i class="fas fa-sign-out-alt"></i></button>
+            </nav>
+        </div>
+<!-- ########### GENERAL ###########  -->
+        <div class="cont-content" id="general">
+            <div class="flex">
+                <div class="balance">
+                    <p>Welcome<br>
+                        <span class="name"></span> <br>
+                        Invested: <br>
+                        <span class="money"></span>
+                    </p>
+                </div>
+                <div class="list-btn">
+                    <button class="btn btn-blue" id="buy">
+                        <i class="fas fa-chart-line"></i>
+                        <span class="fas fa-chart-line icon"></span>
+                        <p>Buy<br>
+                        <span>buy job stocks</span></p>
+                    </button>
+                    <button class="btn btn-violet" id="all">
+                        <i class="far fa-credit-card"></i>
+                        <span class="far fa-credit-card icon"></span>
+                        <p>Investments<br>
+                        <span>show all the investments</span></p>
+                    </button>
+                    <button class="btn btn-orange" id="sell">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span class="fas fa-exchange-alt icon"></span>
+                        <p>Sell<br>
+                        <span>sell stocks</span></p>
+                    </button>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="pub box-shadow confiance">
+                    <p>
+                        <span>You can trust us</span><br>
+                    </p>
+                    <div class="circle-confiance"></div>
+                </div>
+                <div class="pub box-shadow social">
+                    <button class="btn btn-blue" id="new_bank">
+                        <i class="far fa-handshake"></i>
+                        <span class="far fa-handshake icon"></span>
+                        <p>Banking<br>
+                        <span>the modern day banking system</span></p>
+                    </button>
+                </div>
+            </div>
+        </div>
+<!-- ########### BUY MENU ###########  -->
+        <div class="cont-content" id="buyUI">
+            <table id="companies">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr data-label="company-1">
+                        <th>Company 1</th>
+                        <th><i class="fas fa-arrow-up"></i> 1.2</th>
+                    </tr>
+                    <tr data-label="company-2">
+                        <th>Company 2</th>
+                        <th><i class="fas fa-arrow-down"></i> 1.2</th>
+                    </tr>
+                    <tr data-label="company-3">
+                        <th>Company 3</th>
+                        <th><i class="fas fa-circle"></i> 1.2</th>
+                    </tr> -->
+                </tbody>
+            </table>
+            <form>
+                <div class="input-cont">
+                    <label>How much do you want to invest</label>
+                    <input type="number" id="amount" placeholder="$0">
+                </div>
+                <button class="btn btn-green" type="submit">
+                    <i class="fas fa-check"></i>
+                    <span class="fas fa-check icon"></span>
+                    <p>Validate<br>
+                    <span>Active your investment</span></p>
+                </button>
+            </form>
+        </div>
+<!-- ########### ALL MENU ###########  -->
+        <div class="cont-content" id="allUI">
+            <table id="all">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Rate</th>
+                        <th>Sold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr>
+                        <th>Company 1</th>
+                        <th><i class="fas fa-arrow-up"></i> 1.2</th>
+                        <th>-</th>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+<!-- ########### SELL MENU ###########  -->
+        <div class="cont-content" id="sellUI">
+            <table id="sell">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Invested</th>
+                        <th>Intrest</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr data-label="company-1">
+                        <th>Company 1</th>
+                        <th>100</th>
+                        <th><i class="fas fa-arrow-up"></i> 1.2</th>
+                    </tr> -->
+                </tbody>
+            </table>
+            <form>
+                <button class="btn btn-green" type="submit">
+                    <i class="fas fa-check"></i>
+                    <span class="fas fa-check icon"></span>
+                    <p>Sell<br>
+                    <span>Your Deposit</span></p>
+                </button>
+            </form>
+        </div>
+<!-- ########### WAITING ###########  -->
+        <div class="cont-waiting" id="waiting">
+            <div class="content-waiting">
+                <div class="box">
+                    <div class="mainlogo"></div>
+                    <p>Please <span>log in</span><br>
+                    by the help of your fingerprint</p>
+                </div>
+                <div id="fingerprint-content">
+                    <div class="fingerprint-default"></div>
+                    <div class="fingerprint-active"></div>
+                    <div class="fingerprint-bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+</html>

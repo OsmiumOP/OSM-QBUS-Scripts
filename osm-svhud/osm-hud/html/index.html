@@ -1,0 +1,125 @@
+<html>
+
+	<head>
+		<title>Subversion</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="js-fluid-meter.js"></script>
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body style="display:none">	
+		<!--<div id="statusHud" class="statusHud">
+			<div id="varHealth" class="bar">
+				<img class="barIcon" src="img/health-colour.svg"></img>
+				<div id="boxSetHealth"></div>
+				<div id="boxSetHealthBack" style="width:100%;"></div>
+			</div>
+			<div id="varArmor" class="bar">
+				<img class="barIcon" src="img/armour-colour.svg"></img>
+				<div id="boxSetArmour"></div>
+			</div>
+			<div id="varHunger" class="bar">
+				<img class="barIcon" src="img/hunger-colour.svg"></img>
+				<div id="boxSetHunger"></div>
+			</div>
+			<div id="varThirst" class="bar">
+				<img class="barIcon" src="img/thirst-colour.svg"></img>
+				<div id="boxSetThirst"></div>
+			</div>
+			<div id="varOxygen" class="bar">
+				<img class="barIcon" src="img/oxygen-colour.svg"></img>
+				<div id="boxSetOxygen"></div>
+			</div>
+			<div id="varStress" class="bar">
+				<img class="barIcon" src="img/stress-colour.svg"></img>
+				<div id="boxSetStress"></div> 
+			</div>		
+		</div>	-->
+
+		<div class="newhud">
+			<div class="icholder" id="healthreg">
+				<div id="healthliq">
+					<img class="healthic" src="heart.png"></img>
+					<div class="circleedge"></div>
+				</div>
+			</div>
+			
+			<div class="icholder" id="shieldreg">
+				<div id="shieldliq">
+					<img class="shieldic" src="shield.png"></img>
+					<div class="circleedge"></div>
+				</div>
+			</div>
+			
+			<div class="icholder" id="hungerreg">
+				<div id="hungerliq">
+					<img class="hungeric" src="hamburger.png"></img>
+					<div class="circleedge"></div>
+				</div>
+			</div>
+			
+			<div class="icholder" id="thirstreg">
+				<div id="thirstliq">
+					<img class="thirstic" src="thirst.png"></img>
+					<div class="circleedge"></div>
+				</div>
+			</div>
+			
+			<div class="icholder" id="oxygenreg">
+				<div id="oxygenliq">
+					<img class="oxygenic" src="oxygen.png"></img>
+					<div class="circleedge"></div>
+				</div>
+			</div>
+			
+			<div class="icholder" id="stressreg">
+				<div id="stressliq">
+					<img class="stressic" src="stress.png"></img>
+					<div class="circleedge"></div>
+				</div>
+			</div>
+			
+			<div class="icholder" id="voicereg">
+				<div id="voiceliq">
+					<img class="voiceic" src="speak.png"></img>
+					<div class="circleedge"></div>
+				</div>
+			</div>
+
+			<div class="healthveh"></div>
+			<div class="shieldveh"></div>
+			<div class="hungerveh"></div>
+			<div class="thirstveh"></div>
+			<div class="oxygenveh"></div>
+			<div class="stressveh"></div>
+			<div class="voiceveh"></div>
+			
+			<div class="mphholder">
+				<div id="mphliq" style="display: none;">
+					<div class="mphtext"><text id="currentmph">30</text><br><text id="mphsmall">KMH</text></div>
+					<div class="circleedge2"></div>
+				</div>
+			</div>
+			
+			<div class="gasholder">
+				<div id="gasliq" style="display: none;">
+					<img class="gasic" src="gas.png"></img>
+					<div class="circleedge"></div>
+				</div>
+			</div>
+			
+			<div class="nosholder">
+				<div id="nosliq" style="display: none;">
+					<img class="nosic" src="nos.png"></img>
+					<div class="circleedge"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="script.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	</script>
+</html>
