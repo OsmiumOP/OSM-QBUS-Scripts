@@ -374,7 +374,7 @@ end)
 RegisterNetEvent('qb-vehicleshop:client:DoTestPDM')
 AddEventHandler('qb-vehicleshop:client:DoTestPDM', function(plate)
     if ClosestVehicle ~= 0 then
-        QBCore.Functions.SpawnVehicle(QB.ShowroomVehicles[ClosestVehicle].vehicle, function(veh)
+        QBCore.Functions.SpawnVehicle(QB.ShowroomVehicles[ClosestVehicle].chosenVehicle, function(veh)
             TaskWarpPedIntoVehicle(PlayerPedId(), veh, -1)
             exports['LegacyFuel']:SetFuel(veh, 100)
             SetVehicleNumberPlateText(veh, plate)
@@ -384,7 +384,7 @@ AddEventHandler('qb-vehicleshop:client:DoTestPDM', function(plate)
             TriggerServerEvent("vehicletuning:server:SaveVehicleProps", QBCore.Functions.GetVehicleProperties(veh))
             testritveh = veh
 
-            if QB.ShowroomVehicles[ClosestVehicle].vehicle == "urus" then
+            if QB.ShowroomVehicles[ClosestVehicle].chosenVehicle == "urus" then
                 SetVehicleExtra(veh, 1, false)
                 SetVehicleExtra(veh, 2, true)
             end
